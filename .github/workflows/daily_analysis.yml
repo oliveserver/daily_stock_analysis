@@ -51,6 +51,8 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
+          sudo apt-get update
+          sudo apt-get install -y wkhtmltopdf
       
       - name: 创建必要目录
         run: |
